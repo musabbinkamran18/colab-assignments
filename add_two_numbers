@@ -1,0 +1,16 @@
+# piac first project add two numbers
+# WE HAVE TO TELL HIM THE FIRST AND SECOND NUMBER.IT WILL CHANGE IT TO INTEGER. THEN IT WILL PLUS IT
+first_number = input("Enter the first number: ")
+try:
+    first_number = int(first_number)
+except ValueError:
+    print("Invalid input. Please enter a valid integer for the first number.")
+    exit()
+second_number = input("Enter the second number: ")
+try:
+    second_number = int(second_number)
+except ValueError:
+    print("Invalid input. Please enter a valid integer for the second number.")
+    exit()
+total_sum = first_number + second_number
+print(f"The sum of {first_number} and {second_number} is: {total_sum}")
